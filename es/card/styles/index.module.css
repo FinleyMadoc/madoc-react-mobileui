@@ -1,0 +1,27 @@
+.ygm-card {
+  --card-header-padding: 13px;
+  --card-body-padding: 0 13px 13px 13px;
+  background: var(--ygm-color-white);
+  border-radius: var(--ygm-radius-xl);
+  overflow: hidden;
+  transform: rotate(0deg);
+}
+.ygm-card-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: var(--card-header-padding);
+}
+.ygm-card-header-title {
+  font-size: var(--ygm-font-size-xl);
+}
+.ygm-card-header-extra {
+  font-size: var(--ygm-font-size-m);
+}
+.ygm-card-body {
+  position: relative;
+  padding: var(--card-body-padding);
+  box-sizing: border-box;
+}

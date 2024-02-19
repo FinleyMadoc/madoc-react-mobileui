@@ -1,0 +1,36 @@
+.ygm-nav-bar {
+  --nav-bar-height: 45px;
+  --border-bottom: none;
+  height: var(--nav-bar-height);
+  border-bottom: var(--border-bottom);
+  padding: 0 var(--ygm-padding-l);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  background-color: var(--ygm-color-background);
+  box-sizing: border-box;
+}
+.ygm-nav-bar-left,
+.ygm-nav-bar-right {
+  flex: 1;
+}
+.ygm-nav-bar-title {
+  flex: auto;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--ygm-font-size-l);
+}
+.ygm-nav-bar-left {
+  font-size: var(--ygm-font-size-m);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ygm-nav-bar-left-icon {
+  font-size: var(--ygm-font-size-xl);
+  margin-right: 4px;
+}
+.ygm-nav-bar-right {
+  text-align: right;
+}

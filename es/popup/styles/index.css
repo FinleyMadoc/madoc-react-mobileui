@@ -1,0 +1,31 @@
+.ygm-popup {
+  --z-index: 1000;
+  z-index: var(--z-index);
+  position: fixed;
+  background-color: var(--ygm-color-background);
+}
+.ygm-popup-body {
+  position: fixed;
+  background-color: var(--ygm-color-background);
+  z-index: calc(var(--z-index) + 10);
+}
+.ygm-popup-left {
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.ygm-popup-bottom {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.ygm-popup-top {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.ygm-popup-right {
+  height: 100%;
+  top: 0;
+  right: 0;
+}

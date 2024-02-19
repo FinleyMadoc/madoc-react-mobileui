@@ -1,0 +1,84 @@
+.ygm-input {
+  --color: var(--ygm-color-text);
+  --placeholder-color: var(--ygm-color-light);
+  --text-align: left;
+  --background-color: transparent;
+  --font-size: var(--ygm-font-size-m);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 24px;
+  background-color: var(--background-color);
+}
+.ygm-input-disabled {
+  opacity: 0.4;
+}
+.ygm-input-element {
+  flex: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  color: var(--color);
+  font-size: var(--font-size);
+  line-height: 1.5;
+  background: transparent;
+  border: 0;
+  outline: none;
+  appearance: none;
+  text-align: var(--text-align);
+}
+.ygm-input-element::placeholder {
+  color: var(--placeholder-color);
+  font-family: inherit;
+}
+.ygm-input-element:-webkit-autofill {
+  background-color: transparent;
+}
+.ygm-input-element:read-only {
+  cursor: default;
+}
+.ygm-input-element:invalid {
+  box-shadow: none;
+}
+.ygm-input-element::-ms-clear {
+  display: none;
+}
+.ygm-input-element::-webkit-search-cancel-button {
+  display: none;
+}
+.ygm-input-element::-webkit-search-decoration {
+  display: none;
+}
+.ygm-input-element:disabled {
+  opacity: 1;
+}
+.ygm-input-element[type='date'],
+.ygm-input-element[type='time'],
+.ygm-input-element[type='datetime-local'] {
+  min-height: 1.5em;
+}
+.ygm-input-element[type='search'] {
+  -webkit-appearance: none;
+}
+.ygm-input-element[readonly] {
+  pointer-events: none;
+}
+.ygm-input-clear {
+  flex: none;
+  margin-left: 8px;
+  color: var(--ygm-color-light);
+  padding: 4px;
+  cursor: pointer;
+}
+.ygm-input-clear:active {
+  color: var(--ygm-color-weak);
+}
+.ygm-input-clear .antd-mobile-icon {
+  display: block;
+  font-size: var(--ygm-font-size-l);
+}

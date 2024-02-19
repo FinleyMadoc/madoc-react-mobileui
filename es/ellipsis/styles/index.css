@@ -1,0 +1,6 @@
+.ygm-ellipsis {
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 1.5;
+  cursor: pointer;
+}

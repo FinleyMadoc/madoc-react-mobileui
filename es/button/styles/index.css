@@ -1,0 +1,92 @@
+.ygm-button {
+  --base-button-padding: 7px 12px;
+  --small-button-padding: 3px 12px;
+  --middle-button-padding: var(--base-button-padding);
+  --large-button-padding: 11px 12px;
+  --color: var(--ygm-color-white);
+  --text-color: var(--ygm-color-text);
+  --background-color: var(--ygm-color-background);
+  --border-color: var(--ygm-color-border);
+  --border-width: 1px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-size: var(--ygm-font-size-l);
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: var(--base-button-padding);
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+  border-radius: var(--ygm-radius-xs);
+  user-select: none;
+  border: var(--border-width) solid var(--border-color);
+}
+.ygm-button-block {
+  display: block;
+  width: 100%;
+}
+.ygm-button-default.ygm-button-fill-outline {
+  --background-color: transparent;
+  --border-color: var(--ygm-color-text);
+}
+.ygm-button-default.ygm-button-fill-none {
+  --background-color: transparent;
+  --border-width: 0px;
+}
+.ygm-button:not(.ygm-button-default) {
+  --text-color: var(--ygm-color-white);
+  --background-color: var(--color);
+  --border-color: var(--color);
+}
+.ygm-button:not(.ygm-button-default).ygm-button-fill-outline {
+  --text-color: var(--color);
+  --background-color: transparent;
+}
+.ygm-button:not(.ygm-button-default).ygm-button-fill-none {
+  --text-color: var(--color);
+  --background-color: transparent;
+  --border-width: 0px;
+}
+.ygm-button-primary {
+  --color: var(--ygm-color-primary);
+}
+.ygm-button-success {
+  --color: var(--ygm-color-success);
+}
+.ygm-button-danger {
+  --color: var(--ygm-color-danger);
+}
+.ygm-button-warning {
+  --color: var(--ygm-color-warning);
+}
+.ygm-button-small {
+  padding: var(--small-button-padding);
+  font-size: var(--ygm-font-size-m);
+}
+.ygm-button-middle {
+  padding: var(--middle-button-padding);
+}
+.ygm-button-large {
+  padding: var(--large-button-padding);
+  font-size: var(--ygm-font-size-xl);
+}
+.ygm-button-shape-rounded {
+  border-radius: 1000px;
+}
+.ygm-button-shape-rectangular {
+  border-radius: 0;
+}
+.ygm-button-loading-wrap {
+  display: flex;
+  height: 1.4em;
+  align-items: center;
+  justify-content: center;
+}
+.ygm-button-loading-wrap > .ygm-spinner-loading {
+  opacity: 0.6;
+}
+.ygm-button-disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}

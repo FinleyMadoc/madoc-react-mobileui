@@ -1,0 +1,10 @@
+.ygm-countdown {
+  display: flex;
+  align-items: center;
+  font-size: var(--ygm-font-size-m);
+}
+.ygm-countdown-item {
+  display: flex;
+  align-items: center;
+  font-size: var(--ygm-font-size-s);
+}

@@ -1,0 +1,31 @@
+.ygm-error-block {
+  --image-height: 200px;
+  --image-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transform: translateY(-10%);
+}
+.ygm-error-block-image {
+  height: var(--image-height);
+  width: var(--image-width);
+}
+.ygm-error-block-image svg {
+  height: 100%;
+}
+.ygm-error-block-description {
+  font-size: var(--ygm-font-size-s);
+  color: var(--ygm-color-weak);
+  line-height: 1.4;
+  margin-top: 10px;
+}
+.ygm-error-block-description-title {
+  font-size: var(--ygm-font-size-m);
+}
+.ygm-error-block-description-subtitle {
+  margin-top: 8px;
+}

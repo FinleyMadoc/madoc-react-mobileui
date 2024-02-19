@@ -1,0 +1,54 @@
+.ygm-tabs {
+  position: relative;
+  user-select: none;
+}
+.ygm-tabs-tab-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.ygm-tabs-tab-list::-webkit-scrollbar {
+  display: none;
+}
+.ygm-tabs-tab-list-card-tab-active {
+  background: var(--ygm-color-primary);
+}
+.ygm-tabs-tab-list-card-tab-active-color-title {
+  color: var(--ygm-color-white);
+}
+.ygm-tabs-tab-list-card {
+  background-color: var(--ygm-color-border);
+}
+.ygm-tabs-tab-list-card-tab-title {
+  color: var(--ygm-color-weak);
+}
+.ygm-tabs-tab {
+  flex: auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+.ygm-tabs-tab-title {
+  margin: auto;
+  font-size: var(--ygm-font-size-m);
+  white-space: nowrap;
+  width: min-content;
+  position: relative;
+  padding: 8px 0 10px;
+}
+.ygm-tabs-tab-active-tab-title {
+  color: var(--ygm-color-primary);
+}
+.ygm-tabs-tab-line {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background: var(--ygm-color-primary);
+  border-radius: 2px;
+}
+.ygm-tabs-content {
+  padding: var(--ygm-padding-m);
+}
